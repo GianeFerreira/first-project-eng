@@ -24,24 +24,24 @@ public class Ssapg_project_v0_0Application extends com.vaadin.Application implem
 		setMainWindow(main);
 		
 		//Buttons
-        Button btAluEsp = new Button("Aluno Especial");
+        //Button btAluEsp = new Button("Aluno Especial");
         Button btAluReg = new Button("Aluno Regular");
         
      //Event Click desse botão
-        btAluEsp.addListener(new Button.ClickListener() {
+        btAluReg.addListener(new Button.ClickListener() {
 			
 			public void buttonClick(ClickEvent event) {
-				Window dialog = new Window("Aluno Especial");
+				WAluRegular dialog = new WAluRegular("Aluno Regular");
 				dialog.setModal(true);
 				getMainWindow().addWindow(dialog);
 				
 			}
 		});
         
-        btAluReg.addListener(this); //refazer
+        
 		
         vlButtons.addComponent(btAluReg);
-        vlButtons.addComponent(btAluEsp);
+        //vlButtons.addComponent(btAluEsp);
         
 		main.addComponent(vlButtons);
 		
@@ -50,8 +50,8 @@ public class Ssapg_project_v0_0Application extends com.vaadin.Application implem
 		btVoltar.addListener(this);
 		
 		//Add componentes aos layouts
-		vlButtons.addComponent(btAluEsp);
-		vlButtons.setComponentAlignment(btAluEsp, Alignment.MIDDLE_CENTER);
+		//vlButtons.addComponent(btAluEsp);
+		//vlButtons.setComponentAlignment(btAluEsp, Alignment.MIDDLE_CENTER);
 		vlButtons.addComponent(btAluReg);
 		vlButtons.setComponentAlignment(btAluReg, Alignment.MIDDLE_CENTER);
 		hlPrincipal.addComponent(btVoltar);
