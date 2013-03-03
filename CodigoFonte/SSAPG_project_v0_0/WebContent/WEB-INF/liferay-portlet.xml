@@ -4,7 +4,7 @@
     <portlet>
         <!-- Matches definition in portlet.xml. -->
         <!-- Note: Must not be the same as servlet name. -->
-        <portlet-name>Ssapg_project_v0_0 Application portlet</portlet-name>
+        <portlet-name>Ssam Application portlet</portlet-name>
         <instanceable>true</instanceable>
         <ajaxable>false</ajaxable>
     </portlet>

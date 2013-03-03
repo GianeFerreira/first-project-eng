@@ -3,15 +3,15 @@
 
     <portlet>
         <!-- Must not be the same as servlet name. -->
-        <portlet-name>Ssapg_project_v0_0 Application portlet</portlet-name>
-        <display-name>SSAPG_project_v0_0</display-name>
+        <portlet-name>Ssam Application portlet</portlet-name>
+        <display-name>SSAM</display-name>
         
         <!-- Map portlet to a servlet. -->
         <portlet-class>com.vaadin.terminal.gwt.server.ApplicationPortlet</portlet-class>
         <init-param>
             <name>application</name>
             <!-- Must match the servlet URL mapping in web.xml. -->
-            <value>Ssapg_project_v0_0ApplicationServlet</value>
+            <value>SsamApplicationServlet</value>
         </init-param>
         
         <!--
@@ -37,8 +37,8 @@
         
         <!-- Not always required but Liferay uses these. -->
         <portlet-info>
-            <title>SSAPG_project_v0_0</title>
-            <short-title>SSAPG_project_v0_0</short-title>
+            <title>SSAM</title>
+            <short-title>SSAM</short-title>
         </portlet-info>
     </portlet>
 </portlet-app>
